@@ -13,3 +13,11 @@ class Queue:
 			x = self.items[self.front_index]
 			self.front_index += 1
 			return x
+
+    def front(self):
+        if len(self.items) == 0 or self.front_index == len(self.items):
+            print("Queue is empty")
+        else:
+            x = self.items[self.front_index]
+            self.front_index += 1
+            return x
